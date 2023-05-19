@@ -5,7 +5,7 @@ body{
 
     height: 100vh;
 
-    background-image: url('/assets/img/cassio-13092018214352784.jpg');
+    background-image: url('./assets/img/cassio-13092018214352784.jpg');
     filter: grayscale(1);
 
     font-family: 'Montserrat', sans-serif;
@@ -35,7 +35,7 @@ body{
 @media (max-width: 599px)
 {
     body{
-        background: url('/assets/img/cassio-13092018214352784.jpg');
+        background: url('./assets/img/cassio-13092018214352784.jpg');
         background-repeat: repeat-y;
         max-width: 599px;
     }
