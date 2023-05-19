@@ -1,0 +1,56 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    height: 100vh;
+
+    background-image: url('/assets/img/cassio-13092018214352784.jpeg');
+    filter: grayscale(1);
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.app{
+    max-width: 900px;
+    width: 100%;
+    padding: 120px;
+    border-radius: 25px;    
+    background-color: rgb(255 255 255 / 0.5);
+
+    position: relative;
+}
+
+.app h1{
+    text-align: left;
+}
+.app h2{
+    text-align: right;
+}
+#demo {
+    font-size: 90px;
+}
+
+@media (max-width: 599px)
+{
+    body{
+        background: url('/assets/img/cassio-13092018214352784.jpeg');
+        background-repeat: repeat-y;
+        max-width: 599px;
+    }
+
+  .app{
+    max-width: 380px;
+    width:100%;
+    padding: 0;
+  }
+  .app h1, .app h2{
+    text-align: center;
+  }
+
+  #demo {
+    font-size: 30px;
+    text-align: center;
+  }
+}
