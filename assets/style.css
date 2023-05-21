@@ -17,9 +17,10 @@ body{
     width: 100%;
     padding: 120px;
     border-radius: 25px;    
-    background-color: rgb(255 255 255 / 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 
     position: relative;
+    color: white;
 }
 
 .app h1{
@@ -30,6 +31,37 @@ body{
 }
 #demo {
     font-size: 90px;
+}
+#demo {
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: 10px;
+}
+#demo .clock{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: relative;
+}
+#demo .clock::before{
+  content: '';
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  border: 1px solid white;
+  
+  border-radius: 50%;
 }
 
 @media (max-width: 599px)
@@ -50,7 +82,28 @@ body{
   }
 
   #demo {
-    font-size: 30px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #demo .clock{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+  }
+
+  #demo .clock::before{
+    content: '';
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    border: 1px solid white;
+    
+    border-radius: 50%;
   }
 }
